@@ -27,4 +27,4 @@ end
 node.run_state['nginx_configure_flags'] =
   node.run_state['nginx_configure_flags'] | ["--add-module=#{set_misc_extract_path}/set-misc-nginx-module-#{node['nginx']['set_misc']['version']}"]
 
-include_recipe 'nginx::ngx_devel_module'
+include_recipe 'ga-nginx::ngx_devel_module'
